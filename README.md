@@ -1,4 +1,4 @@
-# Проект по тестированию интернет-магазина <a target="_blank" href="https://www.wildberries.ru/"
+# Проект по тестированию интернет-магазина "https://www.wildberries.ru/"
 
 ![main page screenshot](pictures/wildberries_main_page.png)
 
@@ -20,10 +20,10 @@
 ---
 
 ### Запуск автотестов осуществляется с использованием Jenkins
-> [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/Vadim_Korolev_Steam_UI/)
+> [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/hw_14_July_Project_last/)
 
 #### Для запуска автотестов в Jenkins
-1. Открыть [задачу в Jenkins](https://jenkins.autotests.cloud/job/Vadim_Korolev_Steam_UI/)
+1. Открыть [задачу в Jenkins](https://jenkins.autotests.cloud/job/hw_14_July_Project_last/)
 
 ![jenkins job main page](pictures/Jenkins_job_main_page.png)
 
