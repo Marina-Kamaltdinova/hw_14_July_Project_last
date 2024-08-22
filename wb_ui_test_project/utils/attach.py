@@ -1,4 +1,5 @@
 import allure
+import os
 
 
 def screenshot(browser):
@@ -21,7 +22,8 @@ def html(browser):
 
 
 def video(browser):
-    video_url = "https://selenoid.autotests.cloud/video/" + browser.driver.session_id + ".mp4"
+    selenoid = os.getenv('SELENOID_URL')
+    video_url = f"https://{selenoid}/video/" + browser.driver.session_id + ".mp4"
     html_markup = "<html><body><video width='100%' height='100%' controls autoplay><source src='" \
                   + video_url \
                   + "' type='video/mp4'></video></body></html>"

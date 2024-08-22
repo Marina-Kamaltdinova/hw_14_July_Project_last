@@ -42,7 +42,8 @@ def browser_config(request):
     options.capabilities.update(selenoid_capabilities)
     login = os.getenv('LOGIN')
     password = os.getenv('PASSWORD')
-    driver = webdriver.Remote(command_executor=f"https://{login}:{password}@selenoid.autotests.cloud/wd/hub",
+    selenoid = os.getenv('SELENOID_URL')
+    driver = webdriver.Remote(command_executor=f"https://{login}:{password}@{selenoid}/wd/hub",
                               options=options)
     browser.config.driver = driver
     browser.config.window_width = 1920
