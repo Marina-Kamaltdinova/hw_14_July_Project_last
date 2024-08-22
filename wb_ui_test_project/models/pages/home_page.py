@@ -8,13 +8,6 @@ class Home:
             browser.open('https://www.wildberries.ru/')
             return self
 
-    # def search_item(self, value):
-    #     with allure.step("Выбор продукта"):
-    #         search = browser.element('#searchInput')
-    #         search.click()
-    #         browser.element('.autocomplete__content').should(be.visible)
-    #         search.set_value(value).press_enter()
-    #         return self
     def search_item(self, value):
         with allure.step("Выбор продукта"):
             search = browser.element('#searchInput')

@@ -5,7 +5,6 @@ import allure
 class Cart:
     def product_add_to_cart(self):
         with allure.step("Добавление продукта в корзину"):
-            #browser.element('.product-page__order [aria-label="Добавить в корзину"]').click()
             browser.element('.product-page__order-buttons [aria-label="Добавить в корзину"]').click()
             return self
 
